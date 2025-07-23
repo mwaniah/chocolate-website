@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Our Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div id="cocoa-container"></div>
+            <h1>Experience the Richness of Chocolate</h1>
+            <p>A world of deliciousness</p>
+        </section>
+
+        <section id="about">
+            <h2>A World of Flavour</h2>
+            <p>Welcome to our chocolate paradise! We believe that chocolate is more than just a sweet treat; it's an experience. That's why we are dedicated to crafting the most exquisite chocolates using only the finest ingredients. From the rich, velvety texture of our dark chocolate to the creamy sweetness of our white chocolate, each bite is a journey of flavour.</p>
+            <p>Our passion for chocolate drives us to explore unique combinations and create innovative flavours. Whether you're a fan of classic combinations like hazelnut and caramel or looking for something more adventurous like mint or orange-infused chocolate, we have something to delight your senses. Join us in celebrating the art of chocolate.</p>
+        </section>
+
+        <section id="products">
+            <h2>A Treat for Everyone</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.27.jpeg" alt="Dark Chocolate">
+                    <h3>Dark Chocolate Delight</h3>
+                    <p>Rich and intense dark chocolate for the true connoisseur.</p>
+                </div>
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.28 (1).jpeg" alt="White Chocolate">
+                    <h3>White Chocolate Dream</h3>
+                    <p>Creamy and smooth white chocolate for a sweet escape.</p>
+                </div>
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.28.jpeg" alt="Hazelnut Chocolate">
+                    <h3>Hazelnut Heaven</h3>
+                    <p>Crunchy roasted hazelnuts in milk chocolate.</p>
+                </div>
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.29 (1).jpeg" alt="Caramel Chocolate">
+                    <h3>Caramel Crunch</h3>
+                    <p>Gooey caramel and crispy crunchies in a chocolate shell.</p>
+                </div>
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.29.jpeg" alt="Mint Chocolate">
+                    <h3>Minty Fresh</h3>
+                    <p>Refreshing mint-flavored chocolate.</p>
+                </div>
+                <div class="product-card">
+                    <img src="WhatsApp Image 2025-07-23 at 13.23.30.jpeg" alt="Orange Chocolate">
+                    <h3>Orange Zest</h3>
+                    <p>A zesty orange twist on classic chocolate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="build-a-box">
+            <h2>Build Your Own Chocolate Box</h2>
+            <div class="box-builder">
+                <div class="chocolate-options">
+                    <h3>Choose Your Chocolates</h3>
+                    <div class="chocolate-option" data-name="Dark Chocolate" data-price="325">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.27.jpeg" alt="Dark Chocolate">
+                        <span>Dark Chocolate - Ksh325</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                    <div class="chocolate-option" data-name="White Chocolate" data-price="325">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.28 (1).jpeg" alt="White Chocolate">
+                        <span>White Chocolate - Ksh325</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                    <div class="chocolate-option" data-name="Hazelnut Chocolate" data-price="390">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.28.jpeg" alt="Hazelnut Chocolate">
+                        <span>Hazelnut Chocolate - Ksh390</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                    <div class="chocolate-option" data-name="Caramel Chocolate" data-price="390">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.29 (1).jpeg" alt="Caramel Chocolate">
+                        <span>Caramel Chocolate - Ksh390</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                    <div class="chocolate-option" data-name="Mint Chocolate" data-price="360">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.29.jpeg" alt="Mint Chocolate">
+                        <span>Mint Chocolate - Ksh360</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                    <div class="chocolate-option" data-name="Orange Chocolate" data-price="360">
+                        <img src="WhatsApp Image 2025-07-23 at 13.23.30.jpeg" alt="Orange Chocolate">
+                        <span>Orange Chocolate - Ksh360</span>
+                        <button class="add-to-box">+</button>
+                    </div>
+                </div>
+                <div class="box-summary">
+                    <h3>Your Custom Box</h3>
+                    <div id="box-items"></div>
+                    <p>Total: Ksh<span id="box-total">0.00</span></p>
+                    <button id="reset-box">Clear Box</button>
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="happy-customers">
+            <h2>Our Happy Customers</h2>
+            <div class="customer-grid">
+                <div class="customer-post">
+                    <img src="person1.jpg" alt="Customer Photo">
+                    <div class="post-overlay">
+                        <p>"Absolutely in love with these chocolates! The dark chocolate is to die for. 😍 #chocolatelove #bestchocolate"</p>
+                    </div>
+                </div>
+                <div class="customer-post">
+                    <img src="person2.jpg" alt="Customer Photo">
+                    <div class="post-overlay">
+                        <p>"The perfect gift for any occasion. My friends loved the custom box I built for them! 🎁 #chocolatebox #giftideas"</p>
+                    </div>
+                </div>
+                <div class="customer-post">
+                    <img src="person3.jpg" alt="Customer Photo">
+                    <div class="post-overlay">
+                        <p>"I can't get enough of the hazelnut chocolates. They are my absolute favorite! 😋 #hazelnut #chocoholic"</p>
+                    </div>
+                </div>
+                <div class="customer-post">
+                    <img src="person4.jpg" alt="Customer Photo">
+                    <div class="post-overlay">
+                        <p>"The fruit and nut chocolate is a game-changer. Such a unique and delicious flavour combination! 🍓 #fruitandnut #newfavorite"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packaging">
+            <h2>Sustainable & Beautiful Packaging</h2>
+            <div class="packaging-info">
+                <img src="boxed-chocolates.jpg" alt="Eco-friendly packaging">
+                <div class="packaging-text">
+                    <p>We believe in protecting our planet as much as we love creating delicious chocolates. That's why all of our packaging is 100% recyclable and made from sustainably sourced materials.</p>
+                    <p>Our beautiful gift boxes are not only designed to impress but also to be kind to the environment. They are perfect for any occasion and can be reused or recycled. We are committed to reducing our carbon footprint, one chocolate box at a time.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Checkout</h2>
+            <div id="order-summary"></div>
+            <form id="checkout-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="M-Pesa Phone Number" required>
+                <div class="payment-methods">
+                    <p>Pay with:</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png" alt="M-Pesa" class="payment-icon mpesa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="Mastercard" class="payment-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa" class="payment-icon">
+                </div>
+                <button type="submit" id="place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Chocolate Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
